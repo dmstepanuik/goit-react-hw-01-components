@@ -1,0 +1,47 @@
+.profile {
+  text-align: center;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.tag {
+  text-align: center;
+}
+.location {
+  text-align: center;
+}
+.stats {
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  list-style: none;
+}
+.statsItem {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
