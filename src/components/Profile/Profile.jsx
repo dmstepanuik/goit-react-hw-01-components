@@ -1,5 +1,5 @@
 import s from './Profile.module.css';
-console.log(s);
+
 export default function Profile(props) {
   const { username, tag, location, avatar, stats } = props;
 
