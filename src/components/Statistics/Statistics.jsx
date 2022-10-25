@@ -1,3 +1,4 @@
+import PT from 'prop-types';
 import s from './Statistics.module.css';
 
 export default function Statistics({ title, stats }) {
@@ -16,3 +17,13 @@ export default function Statistics({ title, stats }) {
     </section>
   );
 }
+Statistics.propTypes = {
+  title: PT.string,
+  stats: PT.arrayOf(
+    PT.shape({
+      id: PT.string.isRequired,
+      label: PT.string.isRequired,
+      percentage: PT.number.isRequired,
+    }).isRequired
+  ),
+};

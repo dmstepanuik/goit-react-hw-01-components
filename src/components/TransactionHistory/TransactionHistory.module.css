@@ -1,0 +1,16 @@
+.transactionHistory {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+.tbody .tr:nth-child(2n) {
+  background-color: gainsboro;
+}
+
+.thead .tr {
+  background-color: aqua;
+}

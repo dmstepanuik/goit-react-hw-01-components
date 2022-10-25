@@ -1,3 +1,4 @@
+import PT from 'prop-types';
 import s from './Profile.module.css';
 
 export default function Profile(props) {
@@ -29,3 +30,14 @@ export default function Profile(props) {
     </div>
   );
 }
+Profile.propTypes = {
+  username: PT.string.isRequired,
+  tag: PT.string.isRequired,
+  location: PT.string.isRequired,
+  avatar: PT.string.isRequired,
+  stats: PT.shape({
+    followers: PT.number.isRequired,
+    views: PT.number.isRequired,
+    likes: PT.number.isRequired,
+  }).isRequired,
+};
